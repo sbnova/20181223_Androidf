@@ -76,7 +76,7 @@ public class MainActivity extends BaseActivity {
                 DatePickerDialog.OnDateSetListener odsl = new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                       String selectDate = String.format("%년 %dnjf %일", year, month+1, dayOfMonth);
+                       String selectDate = String.format("%d년 %d월 %d일", year, month+1, dayOfMonth);
                        dateTxt.setText(selectDate);
                     }
                 };
